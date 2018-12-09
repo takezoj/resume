@@ -3,17 +3,19 @@
 \usepackage[compact]{titlesec}
 \usepackage[normalem]{ulem}
 \usepackage[margin=.75in]{geometry}
-\usepackage[familydefault,regular]{Chivo}
+%\usepackage[familydefault,regular]{Chivo}
 \usepackage[T1]{fontenc}
+\usepackage{tgheros}%font family
 \usepackage{enumitem}
 \usepackage{amsmath}
-\usepackage{fontawesome}
+\usepackage{fontawesome}%social media icons
 \usepackage{xcolor}
 \usepackage{fix-cm}
 \usepackage{hyperref}
 \setlist[itemize]{noitemsep, topsep=0pt}
 \newcommand\HUGE{\fontsize{28}{48}\selectfont}
-\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\newcommand\LArge{\fontsize{15}{20}\selectfont}
+\titlespacing*\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
 
 \title{resume}
@@ -23,8 +25,11 @@
 \begin{document}
 \thispagestyle{empty}
 
-\titleformat{\section}{\Large}{}{0em}{}{}
+{\fontfamily{qhv}\selectfont
+
+\titleformat{\section}{\LArge}{}{0em}{}{}
 \titleformat{\subsection}{}{}{0em}{}{}
+
 
 \renewcommand{\maketitle}{
 \begin{center}
@@ -40,70 +45,71 @@
 { \begin{itemize}
     \setlength{\itemsep}{0pt}
     \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0pt}     }
-{ \end{itemize}                  } 
+    \setlength{\parsep}{0pt}}
+{ \end{itemize}} 
 
 \maketitle
 
-\section[Education \hfill]{Education \sout{\hfill}}
+\section[Education \hfill]{\textcolor{darkgray}{Education \sout{\hfill}}}
     {\bfseries\large Northeastern University $\mid$ B.S. in Computer Engineering} \hfill Boston, MA\\
     {\bfseries GPA:} 3.38 \hfill\textit{December 2020}\\
     {\bfseries Honors:} Dean's List, Ujima Global Leader (Merit Scholarship)\\
     {\bfseries Activities:} IEEE, NUCAR Research, Muay Thai\\
     {\bfseries Coursework:} Embedded Design, Fundamentals of Computer Science, Discrete Structures%Fundamentals of Engineering Algorithms, Fundamentals of Networks, Circuits and Signals
 
-\section[Technical Skills \hfill]{Technical Skills \sout{\hfill}}
+\section[Technical Skills \hfill]{\textcolor{darkgray}{Technical Skills \sout{\hfill}}}
 	\begin{tabular}{rl}
 	{\bfseries Languages: }&Python, C/C++, MATLAB\\
     {\bfseries Libraries: }&OpenCV, Git\\
     {\bfseries Software: }&Linux/Unix, Microsoft Office, Adobe Suite: Lightroom, Photoshop, Premiere
     \end{tabular}
     
-\section[Projects \& Research \hfill]{Projects \& Research \sout{\hfill}}
+\section[Projects \& Research \hfill]{\textcolor{darkgray}{Projects \& Research \sout{\hfill}}}
     \subsection{\bfseries\large Computer Architecture Research Lab (Undergrad. Assistant)} 
-    \textit{\textcolor{darkgray}{C++, OpenCV}} \hfill \textit{Nov 2018 - Present}
+    \textit{\textcolor{darkgray}{C++, OpenCV \hfill \textit{Nov 2018 - Present}}}
     \begin{myitemize}
         \item Developing facial recognition algorithm to be implemented into existing face detection program
     \end{myitemize}
     \subsection{\bfseries\large Musical Robot Arm}
-    \textit{\textcolor{darkgray}{C++, Simulink, ZedBoard}} \hfill \textit{Nov 2018 - Dec 2018}
+    \textit{\textcolor{darkgray}{C++, Simulink, ZedBoard \hfill \textit{Nov 2018 - Dec 2018}}}
     \begin{myitemize}
-        \item Designed digital circuits to convert decimal angle and speed inputs to PWM
+        \item Designed digital circuits in Simulink to program FPGA on ZedBoard
         \item Developed code for arm to play various songs on a xylophone based on input from user
+        \item Integrated Bluetooth to control arm movement with acceleration values from Wiimote
     \end{myitemize}
     \subsection{\bfseries\large Facial Recognition Smart Door (BostonHacks 2018)}
-    \textit{\textcolor{darkgray}{Python, OpenCV, Twilio}}  \hfill \textit{Nov 2018}
+    \textit{\textcolor{darkgray}{Python, OpenCV, Twilio  \hfill \textit{Nov 2018}}}
     \begin{myitemize}
         \item Implemented cascade classifier to open (animated) door using facial recognition
         \item Incorporated Twilio API to send customized mobile alerts depending on successful or failed unlock\\ 
         attempt
     \end{myitemize}
 
-\section[Work Experience \hfill]{Work Experience \sout{\hfill}}
+\section[Work Experience \hfill]{\textcolor{darkgray}{Work Experience \sout{\hfill}}}
     \subsection{{\bfseries\large Northeastern University Center for Student Involvement} \hfill Boston, MA}
-    \textit{\textcolor{darkgray}{Scheduling Assistant}} \hfill \textit{Jun 2018 - Dec 2018}
+    \textit{\textcolor{darkgray}{Scheduling Assistant \hfill \textit{Jun 2018 - Dec 2018}}}
     \begin{myitemize}
         \item Oversaw and created bookings for 400+ clubs and organizations
         \item Resolved issues for customers to facilitate efficiency and conflict resolution
     \end{myitemize}
     \subsection{{\bfseries\large Santouka Hokkaido Ramen} \hfill Boston, MA}
-    \textit{\textcolor{darkgray}{Line Cook}} \hfill \textit{Sep 2016 - Jul 2018}
+    \textit{\textcolor{darkgray}{Line Cook \hfill \textit{Sep 2016 - Jul 2018}}}
     \begin{myitemize}
         \item Collaborated with kitchen and wait staff in fast-paced environment while coordinating multiple orders
         \item Achieved multiple single-day revenue records through efficient, organized work (30\% increase over\\
         employment duration)
     \end{myitemize}
     \subsection{{\bfseries\large Alpine Visitor Center, Furano} \hfill Furano, Japan}
-    \textit{\textcolor{darkgray}{Guide/Translator}} \hfill \textit{May 2016 - Jun 2016}
+    \textit{\textcolor{darkgray}{Guide/Translator \hfill \textit{May 2016 - Jun 2016}}}
     \begin{myitemize}
         \item Lead guests on fishing tours, hot air balloon flights, rafting trips
         \item Interacted with guests and coworkers in Japanese, and translated for guests when needed
     \end{myitemize}
     
-\section[Skills \& Interests \hfill]{Skills \& Interests \sout{\hfill}}
+\section[Skills \& Interests \hfill]{\textcolor{darkgray}{Skills \& Interests \sout{\hfill}}}
     \begin{tabular}{rl}
         {\bfseries Languages: }&Japanese (Fluent), German (Intermediate)\\
         {\bfseries Interests: }&Investing/Trading, Photography, Travel
     \end{tabular}
-
+}%close font
 \end{document}
