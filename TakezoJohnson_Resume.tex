@@ -13,9 +13,10 @@
 \usepackage{fix-cm}
 \usepackage{hyperref}
 \setlist[itemize]{noitemsep, topsep=0pt}
-\newcommand\HUGE{\fontsize{28}{48}\selectfont}
-\newcommand\LArge{\fontsize{15}{20}\selectfont}
-\titlespacing*\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\setlength{\voffset}{-0.15in}%space above header
+\newcommand\HUGE{\fontsize{20}{48}\selectfont}
+\newcommand\LArge{\fontsize{15}{23}\selectfont}
+\titlespacing*\subsection{0pt}{10pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
 
 \title{resume}
@@ -23,19 +24,19 @@
 \date{November 2018}
 
 \begin{document}
+
 \thispagestyle{empty}
 
-{\fontfamily{qhv}\selectfont
+{\fontfamily{qhv}\selectfont	%open font
 
-\titleformat{\section}{\LArge}{}{0em}{}{}
+\titleformat{\section}{\Large}{}{0em}{}{}
 \titleformat{\subsection}{}{}{0em}{}{}
-
 
 \renewcommand{\maketitle}{
 \begin{center}
 {\HUGE Takezo Johnson}\\
-\vspace{.5em}
-%\faMobilePhone{ }(123) 456-7890 $\mid$ 
+\vspace{1em}
+\faMobilePhone{ }(678) 467-0910 $\mid$ 
 \href{mailto:johnsontakezo@gmail.com}{\faSend{ }johnsontakezo@gmail.com} $\mid$ 
 \href{https://www.linkedin.com/in/takezoj}{\faLinkedinSquare{ }linkedin.com/in/takezoj} $\mid$ 
 \href{https://www.github.com/takezoj}{\faGithub{ }github.com/takezoj}
@@ -51,65 +52,68 @@
 \maketitle
 
 \section[Education \hfill]{\textcolor{darkgray}{Education \sout{\hfill}}}
-    {\bfseries\large Northeastern University $\mid$ B.S. in Computer Engineering} \hfill Boston, MA\\
-    {\bfseries GPA:} 3.38 \hfill\textit{December 2020}\\
+    {\bfseries\large Northeastern University $\mid$ B.Sc. in Computer Engineering} \hfill Boston, MA\\
+    {\bfseries GPA:} 3.35/4.0 \hfill\textit{\textcolor{darkgray}{Dec 2020}}\\
     {\bfseries Honors:} Dean's List, Ujima Global Leader (Merit Scholarship)\\
-    {\bfseries Activities:} IEEE, NUCAR Research, Muay Thai\\
-    {\bfseries Coursework:} Embedded Design, Fundamentals of Computer Science, Discrete Structures%Fundamentals of Engineering Algorithms, Fundamentals of Networks, Circuits and Signals
+    %{\bfseries Activities:} IEEE, Hackathons, Northeastern Robotics\\
+    {\bfseries Coursework:} Computer Systems, Computer Architecture, Embedded Design, Algorithms and Data Structures,\\ Fundamentals of Networks, Object-Oriented Programming, Digital Design and Computer Organization
 
 \section[Technical Skills \hfill]{\textcolor{darkgray}{Technical Skills \sout{\hfill}}}
-	\begin{tabular}{rl}
-	{\bfseries Languages: }&Python, C/C++, MATLAB\\
-    {\bfseries Libraries: }&OpenCV, Git\\
-    {\bfseries Software: }&Linux/Unix, Microsoft Office, Adobe Suite: Lightroom, Photoshop, Premiere
-    \end{tabular}
-    
-\section[Projects \& Research \hfill]{\textcolor{darkgray}{Projects \& Research \sout{\hfill}}}
-    \subsection{\bfseries\large Computer Architecture Research Lab (Undergrad. Assistant)} 
-    \textit{\textcolor{darkgray}{C++, OpenCV \hfill \textit{Nov 2018 - Present}}}
-    \begin{myitemize}
-        \item Developing facial recognition algorithm to be implemented into existing face detection program
-    \end{myitemize}
+	%\begin{tabular}{rl}
+	{\bfseries Languages: }Python, Java, Scala, Golang, C++\\
+    {\bfseries Tools/Technologies: }Git, Linux/Unix, AWS, Spark SQL, Tensorflow, Keras, Pandas, OpenCV
+    %\end{tabular}
+  
+\section[Work Experience \hfill]{\textcolor{darkgray}{Work Experience \sout{\hfill}}}
+	\subsection{{\bfseries\large Amazon} \hfill Seattle, WA (remote)}
+	\textit{\textcolor{darkgray}{SDE Intern \hfill \textit{May 2020 - July 2020}}}
+	\begin{myitemize}
+		\item Migrated machine learning system to Native AWS and modularized pipeline to improve efficiency and flexibility
+		\item Utilized CloudFormation's infrastructure-as-code to create Glue Crawlers and Jobs in Scala to get and \\
+		preprocess data from S3 to feed into machine learning model
+		\item Wrote metrics to CloudWatch and setup a dashboard to display key statistics
+	\end{myitemize}
+
+	\subsection{{\bfseries\large Goldman Sachs} \hfill New York, NY}
+	\textit{\textcolor{darkgray}{Engineering Analyst Intern \hfill \textit{Jan 2020 - April 2020}}}
+	\begin{myitemize}
+		\item Built a machine learning model using TensorFlow to predict expected durations of background tasks on trading risk platform
+		\item Performed data analysis to build and test models and automated retraining cycle to gather new data from ElasticSearch and update the model being used in production
+		\item Created a Flask REST service that runs the model and leveraged Vert.x to get predictions from Java codebase to display results on Risk Status Page
+	\end{myitemize}
+
+	\subsection{{\bfseries\large SAP} \hfill Walldorf, Germany}
+	\textit{\textcolor{darkgray}{Software Engineering Intern \hfill \textit{May 2019 - Aug 2019}}}
+	\begin{myitemize}
+		\item Implemented a mountable encryption layer using AES-GCM algorithm in Go for a file system driver in Linux user space
+		\item Researched encryption algorithms and learned Go quickly by reviewing existing code and testing ideas
+		\item Collaborated with team to test and ensure compatibility of encryption with compression mount across cloud platforms
+	\end{myitemize}
+	
+
+\section[Projects \& Research \hfill]{\textcolor{darkgray}{Projects \sout{\hfill}}}
     \subsection{\bfseries\large Musical Robot Arm}
-    \textit{\textcolor{darkgray}{C++, Simulink, ZedBoard \hfill \textit{Nov 2018 - Dec 2018}}}
+    %\textit{\textcolor{darkgray}{C++, Simulink, ZedBoard \hfill \textit{Nov 2018 - Dec 2018}}}
     \begin{myitemize}
-        \item Designed digital circuits in Simulink to program FPGA on ZedBoard
-        \item Developed code for arm to play various songs on a xylophone based on input from user
-        \item Integrated Bluetooth to control arm movement with acceleration values from Wiimote
-    \end{myitemize}
-    \subsection{\bfseries\large Facial Recognition Smart Door (BostonHacks 2018)}
-    \textit{\textcolor{darkgray}{Python, OpenCV, Twilio  \hfill \textit{Nov 2018}}}
-    \begin{myitemize}
-        \item Implemented cascade classifier to open (animated) door using facial recognition
-        \item Incorporated Twilio API to send customized mobile alerts depending on successful or failed unlock\\ 
-        attempt
+        \item Configured digital circuits in Simulink to program FPGA on ZedBoard to accurately control robotic arm
+        \item Wrote code in C++ for arm to pick up mallet and play various songs on a xylophone based on  user input
+        \item Integrated Bluetooth to control arm movement with acceleration values and button presses from Wiimote
     \end{myitemize}
 
-\section[Work Experience \hfill]{\textcolor{darkgray}{Work Experience \sout{\hfill}}}
-    \subsection{{\bfseries\large Northeastern University Center for Student Involvement} \hfill Boston, MA}
-    \textit{\textcolor{darkgray}{Scheduling Assistant \hfill \textit{Jun 2018 - Dec 2018}}}
+    \subsection{\bfseries\large Facial Recognition Smart Door}
+    %\textit{\textcolor{darkgray}{Python, OpenCV, Twilio  \hfill \textit{Nov 2018}}}
     \begin{myitemize}
-        \item Oversaw and created bookings for 400+ clubs and organizations
-        \item Resolved issues for customers to facilitate efficiency and conflict resolution
+    	  \item Led new teammates to plan, code, and present finished product in under 24 hours for BostonHacks 2018
+        \item Programmed an app which implements cascade classifier in Python using OpenCV to open door using facial recognition
+        \item Incorporated Twilio API to send customized mobile alerts depending on successful or failed unlock attempt
     \end{myitemize}
-    \subsection{{\bfseries\large Santouka Hokkaido Ramen} \hfill Boston, MA}
-    \textit{\textcolor{darkgray}{Line Cook \hfill \textit{Sep 2016 - Jul 2018}}}
-    \begin{myitemize}
-        \item Collaborated with kitchen and wait staff in fast-paced environment while coordinating multiple orders
-        \item Achieved multiple single-day revenue records through efficient, organized work (30\% increase over\\
-        employment duration)
-    \end{myitemize}
-    \subsection{{\bfseries\large Alpine Visitor Center, Furano} \hfill Furano, Japan}
-    \textit{\textcolor{darkgray}{Guide/Translator \hfill \textit{May 2016 - Jun 2016}}}
-    \begin{myitemize}
-        \item Lead guests on fishing tours, hot air balloon flights, rafting trips
-        \item Interacted with guests and coworkers in Japanese, and translated for guests when needed
-    \end{myitemize}
-    
+
 \section[Skills \& Interests \hfill]{\textcolor{darkgray}{Skills \& Interests \sout{\hfill}}}
-    \begin{tabular}{rl}
-        {\bfseries Languages: }&Japanese (Fluent), German (Intermediate)\\
-        {\bfseries Interests: }&Investing/Trading, Photography, Travel
-    \end{tabular}
+    %\begin{tabular}{rl}
+        {\bfseries Languages: }English (Native), Japanese (Native), German (Intermediate)\\
+        {\bfseries Interests: }Investing/Trading, Photography, Skateboarding, Travel
+    %\end{tabular}
+
 }%close font
+
 \end{document}
