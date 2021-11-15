@@ -14,7 +14,7 @@
 \usepackage{hyperref}
 \setlist[itemize]{noitemsep, topsep=0pt}
 \setlength{\voffset}{-0.15in}%space above header
-\newcommand\HUGE{\fontsize{20}{48}\selectfont}
+\newcommand\HUGE{\fontsize{20}{50}\selectfont}
 \newcommand\LArge{\fontsize{15}{23}\selectfont}
 \titlespacing*\subsection{0pt}{10pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
@@ -36,7 +36,7 @@
 \begin{center}
 {\HUGE Takezo Johnson}\\
 \vspace{1em}
-\faMobilePhone{ }(678) 467-0910 $\mid$ 
+\faMobilePhone{ }678-467-0910 $\mid$ 
 \href{mailto:johnsontakezo@gmail.com}{\faSend{ }johnsontakezo@gmail.com} $\mid$ 
 \href{https://www.linkedin.com/in/takezoj}{\faLinkedinSquare{ }linkedin.com/in/takezoj} $\mid$ 
 \href{https://www.github.com/takezoj}{\faGithub{ }github.com/takezoj}
@@ -53,24 +53,30 @@
 
 \section[Education \hfill]{\textcolor{darkgray}{Education \sout{\hfill}}}
     {\bfseries\large Northeastern University $\mid$ B.Sc. in Computer Engineering} \hfill Boston, MA\\
-    {\bfseries GPA:} 3.35/4.0 \hfill\textit{\textcolor{darkgray}{Dec 2020}}\\
-    {\bfseries Honors:} Dean's List, Ujima Global Leader (Merit Scholarship)\\
+    {\bfseries GPA:} 3.36/4.0 \hfill\textit{\textcolor{darkgray}{Dec 2020}}\\
+    {\bfseries Honors:} Dean's List, Ujima Global Leader (Merit Scholarship), Japanese Student Association (President)
     %{\bfseries Activities:} IEEE, Hackathons, Northeastern Robotics\\
-    {\bfseries Coursework:} Computer Systems, Computer Architecture, Embedded Design, Algorithms and Data Structures,\\ Fundamentals of Networks, Object-Oriented Programming, Digital Design and Computer Organization
+    %{\bfseries Coursework:} Computer Systems, Computer Architecture, Embedded Design, Algorithms and Data Structures,\\ Fundamentals of Networks, Object-Oriented Programming, Digital Design and Computer Organization
 
-\section[Technical Skills \hfill]{\textcolor{darkgray}{Technical Skills \sout{\hfill}}}
-	%\begin{tabular}{rl}
-	{\bfseries Languages: }Python, Java, Scala, Golang, C++\\
-    {\bfseries Tools/Technologies: }Git, Linux/Unix, AWS, Spark SQL, Tensorflow, Keras, Pandas, OpenCV
-    %\end{tabular}
+\section[Skills \hfill]{\textcolor{darkgray}{Skills \sout{\hfill}}}
+	{
+	{\bfseries Software Engineering: }Python, Java, C++, Scala\\
+    	{\bfseries Tools/Technologies: }Git, Linux/Unix, AWS, Tensorflow, Keras, Kanban, Jira
   
 \section[Work Experience \hfill]{\textcolor{darkgray}{Work Experience \sout{\hfill}}}
+	\subsection{{\bfseries\large JP Morgan} \hfill Chicago, IL}
+	\textit{\textcolor{darkgray}{Software Engineer \hfill \textit{July 2021 - Present}}}
+	\begin{myitemize}
+		\item Developing a configurable application using Java, Spring, Angular, Drools, and GraphQL to facilitate the loan booking process for commercial banking
+		\item Work closely with product leads to assess sprint needs and fix production defects
+		\item Implemented new logic to change the workflow process of booking loans and created an endpoint to fix an error affecting loans in production
+	\end{myitemize}
+	
 	\subsection{{\bfseries\large Amazon} \hfill Seattle, WA (remote)}
 	\textit{\textcolor{darkgray}{SDE Intern \hfill \textit{May 2020 - July 2020}}}
 	\begin{myitemize}
-		\item Migrated machine learning system to Native AWS and modularized pipeline to improve efficiency and flexibility
-		\item Utilized CloudFormation's infrastructure-as-code to create Glue Crawlers and Jobs in Scala to get and \\
-		preprocess data from S3 to feed into machine learning model
+		\item Migrated a machine learning system to Native AWS and modularized pipeline to improve efficiency and flexibility
+		\item Used CloudFormation's infrastructure-as-code to create Glue Crawlers and Jobs in Scala to get and preprocess data from S3 to feed into machine learning models
 		\item Wrote metrics to CloudWatch and setup a dashboard to display key statistics
 	\end{myitemize}
 
@@ -91,27 +97,25 @@
 	\end{myitemize}
 	
 
-\section[Projects \& Research \hfill]{\textcolor{darkgray}{Projects \sout{\hfill}}}
-    \subsection{\bfseries\large Musical Robot Arm}
-    %\textit{\textcolor{darkgray}{C++, Simulink, ZedBoard \hfill \textit{Nov 2018 - Dec 2018}}}
-    \begin{myitemize}
-        \item Configured digital circuits in Simulink to program FPGA on ZedBoard to accurately control robotic arm
-        \item Wrote code in C++ for arm to pick up mallet and play various songs on a xylophone based on  user input
-        \item Integrated Bluetooth to control arm movement with acceleration values and button presses from Wiimote
-    \end{myitemize}
+\section[Projects \hfill]{\textcolor{darkgray}{Projects \sout{\hfill}}}
+    %\subsection{\bfseries\large Find AR Drone Rescue Project}
+    %\begin{myitemize}
+        %\item Managed team of engineers to create drone search and rescue system using computer vision, robotics, AR
+        %\item Coordinated development lifecycle and removed bottlenecks by working hands-on with software and hardware team members
+        %\item Wrote Java code in Android Studio to create AR GPS indicators to signify locations of persons in need of help to rescuers
+    %\end{myitemize}
 
     \subsection{\bfseries\large Facial Recognition Smart Door}
-    %\textit{\textcolor{darkgray}{Python, OpenCV, Twilio  \hfill \textit{Nov 2018}}}
     \begin{myitemize}
-    	  \item Led new teammates to plan, code, and present finished product in under 24 hours for BostonHacks 2018
-        \item Programmed an app which implements cascade classifier in Python using OpenCV to open door using facial recognition
+    	  \item Led a team to plan, code, and present finished smart home app in under 24 hours for BostonHacks
+        \item Programmed an app which implements cascade classifier in Python using OpenCV to open a door using facial recognition
         \item Incorporated Twilio API to send customized mobile alerts depending on successful or failed unlock attempt
     \end{myitemize}
 
-\section[Skills \& Interests \hfill]{\textcolor{darkgray}{Skills \& Interests \sout{\hfill}}}
+\section[Languages \& Interests \hfill]{\textcolor{darkgray}{Languages \& Interests \sout{\hfill}}}
     %\begin{tabular}{rl}
-        {\bfseries Languages: }English (Native), Japanese (Native), German (Intermediate)\\
-        {\bfseries Interests: }Investing/Trading, Photography, Skateboarding, Travel
+      {\bfseries Languages: }English (Native), Japanese (Native), German (Intermediate)\\
+      {\bfseries Interests: }Scifi, Investing/Trading, Photography, Skateboarding, Travel
     %\end{tabular}
 
 }%close font
